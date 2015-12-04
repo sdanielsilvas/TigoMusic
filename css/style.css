@@ -29,6 +29,10 @@ body {
   background: url(../images/logo.png) no-repeat center center;
 }
 
+.hiddenDiv{
+  visibility: hidden;
+}
+
 /* Color definitions */
 .color-1,
 .notification-entry
