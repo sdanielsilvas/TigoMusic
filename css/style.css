@@ -33,6 +33,10 @@ body {
   visibility: hidden;
 }
 
+.fail_login{
+  color: red;
+}
+
 /* Color definitions */
 .color-1,
 .notification-entry
