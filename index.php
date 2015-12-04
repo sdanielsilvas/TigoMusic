@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=1280,height=720">
     <title> Videotemplate </title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="custom.css" />
 
     <!-- Template for every category element -->
@@ -122,7 +123,9 @@
         at http://www.apache.org/licenses/        
         <div class="back-button"> Back </div>
       </div>
+
     </div>
+    
 
 
     <script type="text/javascript">
@@ -130,9 +133,11 @@
       window.VTNS = {}
     </script>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
     <script type="text/javascript" src="js/core.js"></script>
     <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
     <script type="text/javascript" src="js/channel.js"></script>
     <script type="text/javascript" src="js/exitChannel.js"></script>
     <script type="text/javascript" src="js/settingsChannel.js"></script>
@@ -149,8 +154,34 @@
     <script type="text/javascript" src="js/fullScreenView.js"></script>
     <script type="text/javascript" src="js/videotemplate.js"></script>
     <script type="text/javascript" src="config.js"></script>
-
+    
+    <div class="modal fade" data-keyboard="false" data-backdrop="static" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+              <div class="col-md-3">
+                <label>Usuario:</label>
+              </div>
+              <div class="col-md-9">
+                <input id="userLogin" type="text" class="form-control">
+              </div>
+              <div class="col-md-3">
+                <label>Contraseña:</label>
+              </div>
+              <div class="col-md-9">
+                <input id="passwordLogin" type="password" class="form-control">
+              </div>
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button id="btnLogin" class="btn btn-success">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
-
-
